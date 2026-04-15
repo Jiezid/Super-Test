@@ -27,6 +27,14 @@
     </properties>
 
     <dependencies>
+        <!-- 直接放在 <dependencies> 里 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version> <!-- 至少 1.18.30+，推荐最新 -->
+            <scope>provided</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
@@ -71,7 +79,6 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.30</version>
             <optional>true</optional>
         </dependency>
         <dependency>

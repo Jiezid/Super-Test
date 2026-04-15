@@ -18,7 +18,7 @@
                 <el-form-item label="联系电话" prop="tel">
                   <el-input size="mini" v-model="user.tel"></el-input>
                 </el-form-item>
-                <el-form-item label="性别" prop="tel">
+                <el-form-item label="性别" prop="sex">
                   <el-radio-group v-model="user.sex">
                     <el-radio label="0">男</el-radio>
                     <el-radio label="1">女</el-radio>

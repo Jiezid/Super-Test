@@ -1,5 +1,5 @@
-2026-03-10 15:16:30.740 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\AS\Desktop\006-旅游推荐系统-新版\006-旅游推荐管理系统\tourism-backend\target\classes\mapper\user\ApeUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\AS\Desktop\006-旅游推荐系统-新版\006-旅游推荐管理系统\tourism-backend\target\classes\mapper\user\ApeUserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+2026-04-14 10:29:25.751 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\AS\Desktop\1\旅游推荐管理系统\tourism-backend\target\classes\mapper\user\ApeUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\AS\Desktop\1\旅游推荐管理系统\tourism-backend\target\classes\mapper\user\ApeUserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
@@ -21,47 +21,69 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
 	at com.shanzhu.tourism.BackendApplication.main(BackendApplication.java:27)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\AS\Desktop\006-旅游推荐系统-新版\006-旅游推荐管理系统\tourism-backend\target\classes\mapper\user\ApeUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\AS\Desktop\006-旅游推荐系统-新版\006-旅游推荐管理系统\tourism-backend\target\classes\mapper\user\ApeUserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\AS\Desktop\1\旅游推荐管理系统\tourism-backend\target\classes\mapper\user\ApeUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\AS\Desktop\1\旅游推荐管理系统\tourism-backend\target\classes\mapper\user\ApeUserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
-	... 23 common frames omitted
-Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\AS\Desktop\006-旅游推荐系统-新版\006-旅游推荐管理系统\tourism-backend\target\classes\mapper\user\ApeUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\AS\Desktop\006-旅游推荐系统-新版\006-旅游推荐管理系统\tourism-backend\target\classes\mapper\user\ApeUserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	... 25 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\AS\Desktop\1\旅游推荐管理系统\tourism-backend\target\classes\mapper\user\ApeUserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\AS\Desktop\1\旅游推荐管理系统\tourism-backend\target\classes\mapper\user\ApeUserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
 	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:595)
 	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:431)
 	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:628)
 	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:218)
-	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$dcc74b0c.CGLIB$sqlSessionFactory$2(<generated>)
-	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$dcc74b0c$$FastClassBySpringCGLIB$$e686818.invoke(<generated>)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$44fa11d1.CGLIB$sqlSessionFactory$2(<generated>)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$44fa11d1$$FastClassBySpringCGLIB$$e557736c.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
-	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$dcc74b0c.sqlSessionFactory(<generated>)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$44fa11d1.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
-	... 24 common frames omitted
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\AS\Desktop\006-旅游推荐系统-新版\006-旅游推荐管理系统\tourism-backend\target\classes\mapper\user\ApeUserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
+	... 26 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\AS\Desktop\1\旅游推荐管理系统\tourism-backend\target\classes\mapper\user\ApeUserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
 	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:593)
-	... 35 common frames omitted
+	... 39 common frames omitted
 Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
 	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
 	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:102)
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:138)
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:131)
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:121)
-	... 37 common frames omitted
+	... 41 common frames omitted
 Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'user'.  Cause: java.lang.ClassNotFoundException: Cannot find class: user
 	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
 	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
 	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
-	... 41 common frames omitted
+	... 45 common frames omitted
 Caused by: java.lang.ClassNotFoundException: Cannot find class: user
 	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:196)
 	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
 	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
 	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
-	... 43 common frames omitted
+	... 47 common frames omitted
+2026-04-14 10:29:35.129 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userService in com.shanzhu.tourism.interceptor.TokenInterceptor required a bean of type 'com.shanzhu.tourism.service.UserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.shanzhu.tourism.service.UserService' in your configuration.
+
